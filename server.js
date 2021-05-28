@@ -20,7 +20,7 @@ const connection = mysql.createConnection({
     database: 'freedbtech_CamelliaDB'
 });
 
-app.get('/index', (req, res) => res.render('pages/index'))
+app.get('/', (req, res) => res.render('pages/index'))
 app.get('/contactos', (req, res) => res.render('pages/contactos'))
 app.get('/login', (req, res) => res.render('pages/login'))
 
